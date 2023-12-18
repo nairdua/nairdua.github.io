@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;700&display=swap');
+
+html {
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem;
+    border-bottom: 2px solid black;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0.5rem;
+    }
+}
+
+main {
+    margin: 1.25rem;
+
+    p {
+        margin-top: 0.5rem;
+    }
+
+    p:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 20rem;
+        margin-right: 20rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem;
+    background-color: white;
+    border-top: 2px solid black;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0.5rem;
+    }
+}
+
+article {
+    background-color: white;
+    border: 2px solid black;
+    padding: 0.5rem;
+    box-shadow: 3px 4px 0px 1px black;
+
+    margin-bottom: 1rem;
+}
+
+.two-column {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+
+    article, section {
+        flex: 1;
+    }
+}
