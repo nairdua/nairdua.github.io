@@ -82,7 +82,12 @@
             </article>
         </main>
         <footer>
-            &#169; 2023 Muhammad Audrian Ananda Priambodo
+            <span id="copyright">&#169; 2023 Muhammad Audrian Ananda Priambodo</span>
         </footer>
+        <script>
+            let copyrightText = document.getElementById('copyright')
+            copyrightText.innerHTML = `&#169; 2023-${new Date().getFullYear()} Muhammad Audrian Ananda Priambodo`
+        </script>
     </body>
+    
 </html>

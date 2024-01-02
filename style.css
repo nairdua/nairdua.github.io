@@ -125,3 +125,8 @@ article {
 .duration {
     font-style: italic;
 }
+
+footer {
+    background-color: var(--surface-color);
+    border-top: 2px solid var(--border-color);
+}
