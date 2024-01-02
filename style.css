@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html {
     font-family: 'Rethink Sans', sans-serif;
-    --background-color: #d9d9d9;
+    --background-color: #cfcfcf;
+    --gradient-color: #979797;
     --button-hover-color: #ebebeb;
     --surface-color: #ffffff;
     --color: #000000;
@@ -10,7 +11,9 @@ html {
     --visited-link-color: #0254eb;
     --border-color: #000000;
     background-color: var(--background-color);
-    color: var(--color);
+    background-image:  linear-gradient(var(--gradient-color) 2px, transparent 2px), linear-gradient(90deg, var(--gradient-color) 2px, transparent 2px), linear-gradient(var(--gradient-color) 1px, transparent 1px), linear-gradient(90deg, var(--gradient-color) 1px, var(--background-color) 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 
 button {
@@ -24,7 +27,7 @@ button {
 }
 
 button:hover {
-    background-color: #ebebeb;
+    background-color: var(--button-hover-color);
 }
 
 button:active {
@@ -117,4 +120,8 @@ article {
     @media screen and (max-width: 1000px) {
         flex-wrap: wrap;
     }
+}
+
+.duration {
+    font-style: italic;
 }
